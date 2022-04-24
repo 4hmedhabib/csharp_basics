@@ -99,10 +99,20 @@ namespace ConsoleApp6
 
             // ? FOREACH LOOP
             // ==============
-            var names = new List<string> {
-                "name",
-                "Ahmed"
-            };
+            // List Type String
+            // ----------------
+            // var names = new List<string> {
+            //     "New Friend",
+            //     "Ahmed"
+            // };
+
+            // ARRAY METHODS
+            // =============
+            // names.Add("Maria");
+            // names.Add("Bill");
+            // names.Sort();
+
+
             // foreach (string name in names)
             // {
             //     Console.WriteLine(name.ToUpper());
@@ -113,10 +123,6 @@ namespace ConsoleApp6
             //     Console.WriteLine($"{names[i].ToLower()} ======");
             // }
 
-            // ARRAY METHODS
-            // =============
-            // names.Add("Maria");
-            // names.Add("Bill");
             // names.Remove("Ahmed");
 
             // foreach (string name in names)
@@ -124,6 +130,32 @@ namespace ConsoleApp6
             //     Console.WriteLine(name.ToUpper());
             // }
 
+            // var index = names.IndexOf("Bill");
+
+            // if (index == -1)
+            // {
+            //     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"The name {names[index]} is at index {index}");
+            // }
+
+            // List Type Int
+            // -------------
+            var fabonacciNumbers = new List<int> { 1, 1 };
+
+            while (fabonacciNumbers.Count < 20)
+            {
+
+                var previous = fabonacciNumbers[fabonacciNumbers.Count - 1];
+                var previous2 = fabonacciNumbers[fabonacciNumbers.Count - 2];
+
+                fabonacciNumbers.Add(previous + previous2);
+            };
+
+            foreach (var fabon in fabonacciNumbers)
+                Console.WriteLine(fabon);
         }
     }
 }
