@@ -45,7 +45,7 @@ namespace MySuperBank
             }
 
             var deposit = new Transaction(amount, date, note);
-            allTransactions.Add(deposit)
+            allTransactions.Add(deposit);
         }
 
         public void MakeWithDrawel(decimal amount, DateTime date, string note)
