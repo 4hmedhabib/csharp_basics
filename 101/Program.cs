@@ -158,26 +158,43 @@ namespace ConsoleApp
 
             // * ARRAY METHODS
             // ===============
-            names.Add("Maria");
-            names.Add("Bill");
-            names.Sort();
-            names.Remove("<name>");
+            // names.Add("Maria");
+            // names.Add("Bill");
+            // names.Sort();
+            // names.Remove("<name>");
 
-            foreach (string name in names)
-            {
-                Console.WriteLine(name);
-            }
+            // foreach (string name in names)
+            // {
+            //     Console.WriteLine(name);
+            // }
 
-            var index = names.IndexOf("Maria");
+            // var index = names.IndexOf("Maria");
 
-            if (index == -1)
+            // if (index == -1)
+            // {
+            //     Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"The name {names[index]} is at index {index}");
+            // }
+
+            // * List Type Int
+            // ---------------
+            var fabonacciNumbers = new List<int> { 1, 1 };
+
+            while (fabonacciNumbers.Count < 20)
             {
-                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
-            }
-            else
-            {
-                Console.WriteLine($"The name {names[index]} is at index {index}");
-            }
+
+                var previous = fabonacciNumbers[fabonacciNumbers.Count - 1];
+                var previous2 = fabonacciNumbers[fabonacciNumbers.Count - 2];
+
+                fabonacciNumbers.Add(previous + previous2);
+            };
+
+            foreach (var fabon in fabonacciNumbers)
+                Console.WriteLine(fabon);
+
         }
     }
 }
