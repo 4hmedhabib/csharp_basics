@@ -143,19 +143,19 @@ namespace ConsoleApp6
 
             // List Type Int
             // -------------
-            var fabonacciNumbers = new List<int> { 1, 1 };
+            // var fabonacciNumbers = new List<int> { 1, 1 };
 
-            while (fabonacciNumbers.Count < 20)
-            {
+            // while (fabonacciNumbers.Count < 20)
+            // {
 
-                var previous = fabonacciNumbers[fabonacciNumbers.Count - 1];
-                var previous2 = fabonacciNumbers[fabonacciNumbers.Count - 2];
+            //     var previous = fabonacciNumbers[fabonacciNumbers.Count - 1];
+            //     var previous2 = fabonacciNumbers[fabonacciNumbers.Count - 2];
 
-                fabonacciNumbers.Add(previous + previous2);
-            };
+            //     fabonacciNumbers.Add(previous + previous2);
+            // };
 
-            foreach (var fabon in fabonacciNumbers)
-                Console.WriteLine(fabon);
+            // foreach (var fabon in fabonacciNumbers)
+            //     Console.WriteLine(fabon);
         }
     }
 }
